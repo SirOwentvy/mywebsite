@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Sono - Il Mio Portale</title>
+    <link rel="icon" href="assets/s.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <img src="assets/logo-salvatore.png" alt="Logo Salvatore" class="loader-logo">
+    </div>
+
+    <header>
+        <nav>
+            <img src="assets/logo-salvatore.png" alt="Logo Salvatore" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi Sono</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-page">
+            <div class="about-container">
+                <img src="assets/detective.png" alt="Mascotte del sito" class="about-mascotte">
+                <div class="about-parchment">
+                    <h2>Chi Sono</h2>
+                    <p>Mi chiamo Salvatore Cavallo e sono uno sviluppatore appassionato di sistemi informatici con un diploma 
+                        di Perito Informatico. La mia expertise si estende sia al front-end che al back-end, 
+                        permettendomi di creare soluzioni complete e integrate.
+                        Combino competenze tecniche solide con una passione genuina per l'innovazione tecnologica. La mia formazione come Perito Informatico mi ha fornito basi teoriche robuste, mentre l'esperienza pratica nello sviluppo mi permette di trasformare idee in soluzioni concrete e funzionali.
+Sono sempre alla ricerca di nuove sfide che mi permettano di ampliare le mie competenze e contribuire a progetti innovativi nel panorama tecnologico attuale.
+                    </p>
+                    <button id="open-terminal-btn" class="terminal-button">Mostra i miei link</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="terminal-widget" class="hidden">
+        <div id="terminal-header">
+            <span>I Miei Link</span>
+            <button id="close-terminal-btn">X</button>
+        </div>
+        <div id="terminal-body">
+            <div id="terminal-output"></div>
+        </div>
+    </div>
+
+    <div id="radio-widget">
+        <img src="assets/radio.png" alt="Radio Widget" id="radio-image">
+        <div id="frequency-knob"></div>
+        <audio id="radio-audio" src="assets/audio.mp3"></audio>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

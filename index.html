@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Portale Personale</title>
+    <link rel="icon" href="assets/s.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader">
+        <img src="assets/logo-salvatore.png" alt="Logo Salvatore" class="loader-logo">
+    </div>
+
+    <header>
+        <nav>
+            <img src="assets/logo-salvatore.png" alt="Logo Salvatore" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi Sono</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="assets/logo-character.png" alt="Mascotte del sito" class="hero-mascotte">
+            <div class="hero-text">
+                <h1>Benvenuto nel mio sito!</h1>
+                <p>Un viaggio attraverso le mie passioni e i miei progetti, con un tocco retrò.<br>
+                    Consulta il terminale per vedere il mio CV o continua a girare le altre
+                    pagine del sito. 
+                </p>
+                <button id="open-terminal-btn" class="terminal-button">Apri Terminale</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="radio-widget">
+        <img src="assets/radio.png" alt="Radio Widget" id="radio-image">
+        <div id="frequency-knob"></div>
+        <audio id="radio-audio" src="assets/audio.mp3"></audio>
+    </div>
+
+    <div id="terminal-widget" class="hidden">
+        <div id="terminal-header">
+            <span>Terminale</span>
+            <button id="close-terminal-btn">X</button>
+        </div>
+        <div id="terminal-body">
+            <div id="terminal-output"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
