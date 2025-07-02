@@ -415,3 +415,90 @@ footer {
     font-size: 1.1rem;
     line-height: 1.8;
 }
+
+/* Media Query per Dispositivi Mobili */
+@media (max-width: 768px) {
+    /* Header e Navigazione */
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        height: 120px; /* Logo più piccolo per mobile */
+    }
+
+    nav ul {
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1.5rem; /* Testo navigazione più piccolo */
+    }
+
+    /* Sezione Hero */
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        padding: 1.5rem 2rem;
+        width: 90%;
+    }
+
+    .hero-mascotte {
+        width: 180px;
+    }
+
+    /* Pagina Chi Sono */
+    #about-page {
+        padding: 80px 1rem 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-mascotte {
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-parchment {
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .about-parchment h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-parchment p {
+        font-size: 1rem;
+    }
+
+    /* Terminale Widget */
+    #terminal-widget {
+        width: 90%;
+        height: 50%;
+        bottom: 10px;
+        right: 5%;
+        left: 5%;
+    }
+
+    /* Radio Widget */
+    #radio-widget {
+        width: 100px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    #frequency-knob {
+        bottom: 15px;
+        left: 36px;
+        width: 28px;
+        height: 28px;
+    }
+}
